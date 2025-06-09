@@ -8,7 +8,7 @@ import { Layout, Menu } from "antd";
 
 const { Sider } = Layout;
 
-const Sidebar: FC<> = () => {
+const Sidebar: FC = () => {
   return (
     <Sider trigger={null} collapsible collapsed={true}>
       <div className="demo-logo-vertical" />
