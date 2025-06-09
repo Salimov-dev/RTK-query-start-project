@@ -1,16 +1,6 @@
 import { createSlice, type Dispatch } from "@reduxjs/toolkit";
 import type { RootState } from "./store";
-import type { IProduct } from "./products";
-
-interface ICart {
-  id: number;
-  products: IProduct[];
-  total: number;
-  discountedTotal: number;
-  userId: number;
-  totalProducts: number;
-  totalQuantity: number;
-}
+import type { ICart } from "../types/cart.types";
 
 interface ICartStore {
   entity: ICart | null;

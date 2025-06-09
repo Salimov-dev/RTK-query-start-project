@@ -17,10 +17,11 @@ import {
 } from "../store/products";
 import { useAppDispatch, useAppSelector } from "../hooks/redux.hook";
 import { addToCart } from "../store/cart";
+
 const { Meta } = Card;
 const { Content } = Layout;
 
-const MainContent = () => {
+const Products = () => {
   const dispatch = useAppDispatch();
 
   const products = useAppSelector(getProducts);
@@ -113,4 +114,4 @@ const MainContent = () => {
   );
 };
 
-export default MainContent;
+export default Products;
